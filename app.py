@@ -1,6 +1,7 @@
 import dash
 from dash import dcc, html
 import dash_bootstrap_components as dbc
+from youth_chart import get_youth_population_chart
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
@@ -35,10 +36,10 @@ app.layout = dbc.Container([
         ]),
         dcc.Tab(label='2. Cultural + Economic Strengths', children=[
             html.Br(),
-            html.P("Charts and data visualizations go here."),
-            # Replace below with actual graphs
-            html.Div("📊 Bar charts or maps about youth, innovation, natural resources")
+            html.P("Africa’s greatest asset is its people, especially its youth. A young, dynamic population drives both cultural creativity and future economic power.", className="lead"),
+            dcc.Graph(figure=get_youth_population_chart())
         ]),
+
         dcc.Tab(label='3. Shared Challenges', children=[
             html.Br(),
             html.Div("⚠️ Data on internet access, unemployment, education gaps.")
