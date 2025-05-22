@@ -11,7 +11,7 @@ videos = [
     {"name": "Student 1 - Ghana", "src": "/assets/vid1.mp4"},
     {"name": "Student 2 - Kenya", "src": "/assets/video2.mp4"},
     {"name": "Student 3 - Uganda", "src": "/assets/video3.mp4"},
-    {"name": "Student 4 - Nigeria", "src": "/assets/video4.mp4"},
+    {"name": "Lukman Lateef - Nigeria", "src": "/assets/lukman_clip.mp4"},
     {"name": "Student 5 - Ethiopia", "src": "/assets/video5.mp4"},
     {"name": "Student 6 - Ghana", "src": "/assets/video6.mp4"},
     {"name": "Student 7 - Kenya", "src": "/assets/video7.mp4"},
