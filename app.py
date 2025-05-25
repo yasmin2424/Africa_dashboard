@@ -2,6 +2,7 @@ import dash
 from dash import dcc, html
 import dash_bootstrap_components as dbc
 from youth_chart import get_youth_population_chart
+from unemployment_chart import get_unemployment_chart
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
@@ -42,7 +43,7 @@ app.layout = dbc.Container([
 
         dcc.Tab(label='3. Shared Challenges', children=[
             html.Br(),
-            html.Div("⚠️ Data on internet access, unemployment, education gaps.")
+            dcc.Graph(figure=get_unemployment_chart())
         ]),
         dcc.Tab(label='4. Our Vision: African Youth Exchange', children=[
             html.Br(),
@@ -50,10 +51,10 @@ app.layout = dbc.Container([
         ]),
         dcc.Tab(label='5. Dream 2035', children=[
             html.Br(),
-            html.Div("🚀 Word cloud, timeline, or summary vision from your team.")
+            html.Div("Word cloud, timeline, or summary vision from your team.")
         ])
     ])
 ], fluid=True)
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='127.0.0.1', port=8000)
+    app.run_server(debug=True, host='127.0.0.1', port=8080)
