@@ -183,7 +183,7 @@ app.layout = dbc.Container([
     dcc.Tabs([
         
         
-        dcc.Tab(label='0. Welcome', children=[
+        dcc.Tab(label='Welcome', children=[
     html.Div([
         html.H1(
             "🌍 What Does Africa Mean to You?",
@@ -210,7 +210,7 @@ app.layout = dbc.Container([
 ]),
 
         # Tab 1: Reflections (Video with flags)
-        dcc.Tab(label='1. Our Reflections (Videos)', children=[
+        dcc.Tab(label= ' Our Reflections (Videos)', children=[
             html.Br(),
             html.Div([
                 html.P(
@@ -261,21 +261,21 @@ app.layout = dbc.Container([
         ]),
 
         # Tab 2: Cultural + Economic Strengths
-        dcc.Tab(label='2. Cultural + Economic Strengths', children=[
+        dcc.Tab(label='Cultural + Economic Strengths', children=[
             html.Br(),
             html.P("Africa’s greatest asset is its people, especially its youth. A young, dynamic population drives both cultural creativity and future economic power.", className="lead"),
             dcc.Graph(figure=get_youth_population_chart())
         ]),
 
         # Tab 3: Shared Challenges
-        dcc.Tab(label='3. Shared Challenges', children=[
+        dcc.Tab(label='Shared Challenges', children=[
             html.Br(),
             dcc.Graph(figure=get_literacy_chart()),
             dcc.Graph(figure=get_unemployment_chart())
         ]),
 
         # Tab 4: AfriPulse Vision
-        dcc.Tab(label='4. Our Vision: AfriPulse – The African Data Observatory', children=[
+        dcc.Tab(label='Our Vision: AfriPulse – The African Data Observatory', children=[
             html.Br(),
             html.H4("📡 AfriPulse: The African Data Observatory", className="text-primary"),
             html.P("AfriPulse is a real-time, open dashboard platform that tracks Africa’s progress in education, health, climate, and innovation — powered by data from students, communities, and local governments."),
@@ -318,7 +318,7 @@ app.layout = dbc.Container([
         ]),
 
         # Tab 5: Dream 2035
-        dcc.Tab(label='5. Dream 2035', children=[
+        dcc.Tab(label='Dream 2035', children=[
             html.Br(),
             html.Img( src="/assets/future_africa.jpeg",
                      style={"width": "50%", "margin": "0 auto", "display": "block", "borderRadius": "10px"}
