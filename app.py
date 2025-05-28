@@ -16,8 +16,8 @@ videos = [
     {"name": "Student 2 - Kenya", "src": "/assets/video2.mp4"},
     {"name": "Student 3 - Uganda", "src": "/assets/video3.mp4"},
     {"name": "Lukman Lateef - Nigeria", "src": "/assets/lukman_clip.mp4"},
-    {"name": "Student 5 - Ethiopia", "src": "/assets/video5.mp4"},
-    {"name": "Samuel Adetsi - Ghana", "src": "/assets/sam_.mov"},
+    {"name": "Elshaday Yoseph - Ethiopia", "src": "/assets/elshaday_clip.mp4"},
+    {"name": "Student 6 - Ghana", "src": "/assets/video6.mp4"},
     {"name": "Student 7 - Kenya", "src": "/assets/video7.mp4"},
     {"name": "Student 8 - Uganda", "src": "/assets/video8.mp4"}
 ]
@@ -139,4 +139,4 @@ app.layout = dbc.Container([
 # Run Server
 # -------------------------
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=8000)
+    app.run_server(debug=True, host='127.0.0.1', port=8000)
