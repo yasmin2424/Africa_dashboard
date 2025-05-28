@@ -20,7 +20,7 @@ def process_data(path):
 
 def get_unemployment_chart():
 
-    df = process_data("assets/unemployment.csv")
+    df = process_data("assets/Unemployment.csv")
     df_long = df.melt(id_vars='Country Name', var_name='Year', value_name='Value')
     df_long['Year'] = df_long['Year'].astype(int)
 
